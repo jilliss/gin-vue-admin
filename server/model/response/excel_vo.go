@@ -13,7 +13,7 @@ type ExcelDo struct {
 	Sex  int    `excel:"sex" dic:"sex"`
 }
 
-func WriteExcleExample(excelDos []*ExcelDo) {
+func WriteExcelExample(excelDos []*ExcelDo) {
 	xlsx := excelize.NewFile()
 	index := xlsx.NewSheet("Sheet1")
 	for rowIndex, excelDo := range excelDos {
